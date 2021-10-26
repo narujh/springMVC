@@ -1,0 +1,5 @@
+package ru.zalyaliev.springMVC.dao;
+
+public class PersonDAO {
+
+}

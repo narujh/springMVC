@@ -1,0 +1,5 @@
+package ru.zalyaliev.springMVC.models;
+
+public class Person {
+
+}

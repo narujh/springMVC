@@ -1,0 +1,37 @@
+package ru.zalyaliev.springMVC.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class CalculatorController {
+	
+	@GetMapping("/calculator")
+	public String calculatorPage (@RequestParam("a") double a,
+			@RequestParam("b") double b,
+			@RequestParam("action") String action,
+			Model model) {
+		
+		double result = 0;
+		
+		if (action == "multiplication") {
+			result = a * b;
+		}
+		if (action == "addition") {
+			result = a + b;
+		}
+		if (action == "subtraction") {
+			result = a - b;
+		}
+		if (action == "division") {
+			result = a / b;			
+		}
+		
+		model.addAttribute("result", result);
+		
+		return "/calculator/calculator";
+	}
+
+}

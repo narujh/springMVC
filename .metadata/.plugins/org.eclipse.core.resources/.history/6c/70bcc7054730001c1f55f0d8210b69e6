@@ -1,0 +1,5 @@
+package ru.zalyaliev.springMVC.controllers;
+
+public class PeopleController {
+
+}
