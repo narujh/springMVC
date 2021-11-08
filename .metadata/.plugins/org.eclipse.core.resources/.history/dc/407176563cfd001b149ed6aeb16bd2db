@@ -1,5 +1,0 @@
-package ru.zalyaliev.springMVC.controllers;
-
-public class CalculatorController {
-
-}
